@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "A2Form01"
+  "defaultProject": "A2Form01",
+  "cli": {
+    "analytics": false
+  }
 }
