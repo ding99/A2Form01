@@ -13,7 +13,7 @@ export class SiteFormComponent {
     submitted = false;
     onSubmit() { this.submitted = true; }
     
-    get diagnostic() { return JSON.stringify(this.model); }
+    //get diagnostic() { return JSON.stringify(this.model); }
 
     active = true;
     newSite(){
