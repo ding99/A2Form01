@@ -9,7 +9,7 @@ import { Appproduct } from './product.component';
 import { AppInventory } from './Inventory.component';
 
 const appRoutes: Routes = [
-  {path: 'Product', component: Appproduct },
+  {path: 'Product1', component: Appproduct },
   {path: 'Inventory', component: AppInventory },
 ];
 
