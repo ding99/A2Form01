@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { appService } from './app.service';
+import { appDisplay } from './app.display';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,8 @@ import { appService } from './app.service';
     <router-outlet></router-outlet>
     <br>
     <div>{{value}}</div>
-  `,
-  //providers: [appService]
+    <my-display>Loading Display... </my-display>
+  `
 })
 export class AppComponent {
   value: string = "Empty";
