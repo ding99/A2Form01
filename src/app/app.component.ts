@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { appService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,15 @@ import { Component } from '@angular/core';
       <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
     </ul>
     <router-outlet></router-outlet>
-  `
+    <br>
+    <div>{{value}}</div>
+  `,
+  //providers: [appService]
 })
 export class AppComponent {
+  value: string = "Empty";
+  constructor(private _appService: appService) { }
+  ngOnInit(): void {
+    this.value = this._appService.getApp();
+  }
 }
