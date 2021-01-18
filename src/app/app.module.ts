@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SiteFormComponent } from './site-form.component';
 import { Appproduct } from './product.component';
 import { AppInventory } from './Inventory.component';
+import { appService } from './app.service';
 
 const appRoutes: Routes = [
   {path: 'Product1', component: Appproduct },
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent,SiteFormComponent,Appproduct,AppInventory ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [appService]
 })
 export class AppModule { }
