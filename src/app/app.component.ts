@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { appService } from './app.service';
-import { appDisplay } from './app.display';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +11,7 @@ import { appDisplay } from './app.display';
       <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
     </ul>
     <router-outlet></router-outlet>
-    <br>
+    <br><br>
     <div>{{value}}</div>
     <my-display>Loading Display... </my-display>
   `
