@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { appService } from './app.service';
-import { appDisplay } from './app.display';
 
 @Component({
   selector: 'app-root',
