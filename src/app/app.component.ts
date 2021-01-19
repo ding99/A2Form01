@@ -11,7 +11,7 @@ import { appService } from './app.service';
       <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
     </ul>
     <router-outlet></router-outlet>
-    <br>
+    <br><br>
     <div>{{value}}</div>
     <my-display>Loading Display... </my-display>
   `
